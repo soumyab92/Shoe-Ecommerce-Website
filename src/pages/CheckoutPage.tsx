@@ -11,24 +11,24 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 
 export function CheckoutPage() {
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState({
-    // Shipping
-    firstName: "",
-    lastName: "",
-    email: "",
-    address: "",
-    city: "",
-    state: "",
-    zipCode: "",
-    country: "",
-    // Payment
-    cardNumber: "",
-    expiryDate: "",
-    cvv: "",
-    nameOnCard: "",
-    billingAddress: "",
-    sameAsShipping: true
-  });
+  // const [formData, setFormData] = useState({
+  //   // Shipping
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   address: "",
+  //   city: "",
+  //   state: "",
+  //   zipCode: "",
+  //   country: "",
+  //   // Payment
+  //   cardNumber: "",
+  //   expiryDate: "",
+  //   cvv: "",
+  //   nameOnCard: "",
+  //   billingAddress: "",
+  //   sameAsShipping: true
+  // });
 
   const orderSummary = {
     items: [

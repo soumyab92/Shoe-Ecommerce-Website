@@ -129,7 +129,7 @@ export function ProductPage() {
   const [selectedSize, setSelectedSize] = useState("");
   const [quantity, setQuantity] = useState(1);
   
-  const product = productData[id as keyof typeof productData];
+  const product = productData[Number(id) as keyof typeof productData];
   
   if (!product) {
     return (
@@ -150,6 +150,10 @@ export function ProductPage() {
   const handleAddToCart = () => {
     if (!selectedSize) {
       toast.error("Please select a size before adding to cart");
+      return;
+    }
+    if (selectedColor === null || selectedColor === undefined) {
+      toast.error("Please select a color before adding to cart");
       return;
     }
 

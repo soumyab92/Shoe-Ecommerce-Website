@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, Filter, Grid3X3, List, Star, Heart, ShoppingCart, X } from "lucide-react";
+import { Search, Filter, Grid3X3, List, Star, Heart, ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
